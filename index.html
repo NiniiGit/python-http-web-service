@@ -1,0 +1,34 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LOGIN PAGE </title>
+  </head>
+  <body>
+    <form>
+    <input type="text" placeholder="Username" id="text1" /><br />
+    <input type="password" placeholder="Password" id="text2" /><br />
+    <input type="button" value="Login"  onclick="javascript:validate()" />
+</form>
+<script type="text/javascript">
+function validate()
+{
+    if(   document.getElementById("text1").value == "<login_name>"
+       && document.getElementById("text2").value == "<login_pwd>" )
+    {
+        //alert( "validation succeeded" );
+       location.href="../dbgate_web/";
+        //var fs = require('fs');
+        //location.pathname='.'
+        //<a href="."><folder path to be redirected></a>
+        //var files = fs.readdirSync('<folder to be redirected>');
+
+    }
+    else
+    {
+        alert( "validation failed" );
+        location.href="fail.html";
+    }
+}
+</script>
+</body>
+</html>
